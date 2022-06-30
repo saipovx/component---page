@@ -1,0 +1,211 @@
+
+  // .section__tabs
+.section__tabs {
+    padding: 100px 0px;
+    background: #FDF9F8;
+    
+
+    @media (max-width: $breakpoint992) {
+        padding: 50px 0px;
+    }
+
+    }
+
+    .tabs {
+        &__header {
+            display: flex;
+            align-items: center;
+            gap: 45px;
+
+            @media (max-width: $breakpoint768) {
+               flex-wrap: wrap;
+               gap: 0;
+            }
+
+            &-item {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 180%;
+                color: #1D2736;                
+                cursor: pointer;
+
+                &.active {
+                    border-bottom:3px solid #F0998D ;
+                    color: #F0998D;
+                }
+
+                @media (max-width: $breakpoint768) {
+                    margin-right: 20px;  
+                    margin-bottom: 10px;  
+                 }
+
+                 @media (max-width: $breakpoint480) {
+                    font-size: 18px;
+                    line-height: 140%;
+                }
+            }
+        }
+        &__content {
+            margin-top: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @media (max-width: $breakpoint992) {
+                margin-top: 50px;
+            }
+
+            @media (max-width: $breakpoint768) {
+                margin-top: 30px;
+            }
+
+
+            &-item{
+                animation: fade 0.5s linear;
+
+                @media (max-width: $breakpoint768) {
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    gap: 30px;
+                }
+
+                .tabs-item{
+                    flex: 0 1 48%;
+                    max-width: 500px;
+
+                    &-img{
+                        @media (max-width: $breakpoint1200) {
+                            max-width: 650px;
+                            width: 100%;
+                            height: auto;
+                        }
+
+                    }
+
+                    &-title{
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 46px;
+                        line-height: 110%;     
+                        letter-spacing: -0.03em;
+                        color: #1D2736;
+                        margin-bottom: 24px;
+
+                        @media (max-width: $breakpoint992) {
+                            font-size: 34px;
+                            margin-bottom: 15px;
+                        }
+
+                        & span{
+                            color: 
+                            rgba(240, 153, 141, 1);
+                        }
+                    }
+
+                    &-subtitle{
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 180%;
+                        color: #677487;
+                        margin-bottom: 32px;
+
+                        @media (max-width: $breakpoint992) {
+                            font-size: 15px;
+                            margin-bottom: 15px;
+                        }
+
+                        @media (max-width: $breakpoint768) {
+                            font-size: 16;
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    &-text{
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 180%;
+                        letter-spacing: 0.2em;
+                        color: #677487;
+                        margin-bottom: 8px; 
+                        
+                        @media (max-width: $breakpoint768) {
+                            margin-bottom: 4px;
+                        }
+                    }
+
+                    &-cont{
+                        display: flex;
+                        align-items: center;
+                        gap: 32px;
+
+                        @media (max-width: $breakpoint480) {
+                            flex-wrap: wrap;
+                            gap: 15px;
+                        }
+
+                        &-text{
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 180%;   
+                            color: #1D2736;
+                            margin-bottom: 40px;
+
+                            @media (max-width: $breakpoint992) {
+                                font-size: 15px;
+                                margin-bottom: 35px;
+                            }
+
+                            @media (max-width: $breakpoint768) {
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+
+                    &-btn{
+                        background: #F0998D;
+                        box-shadow: 0px 16px 40px rgba(255, 188, 166, 0.33);
+                        border-radius: 15px;
+                        padding: 16px 41px;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 27px;
+                        text-align: center; 
+                        color: #FFFFFF;
+                        transition: all ease .4s;
+
+                        @media (max-width: $breakpoint768) {
+                            padding: 10px 30px;
+                            font-size: 15px;
+                        }
+
+                        
+                        @media (max-width: $breakpoint480) {
+                            display: inline-block;
+                            flex: 0 0 100%;
+                            max-width: 100%;
+                            width: 100%;
+                            height: auto;
+                            font-size: 15px;
+                        }
+
+                        &:hover{
+                            background: #a96d65;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    
